@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock by Jenn Taft</title>
   </head>
   <body>
@@ -16,13 +17,22 @@
         <option value="">Toronto</option>
         <option value="">Paris</option>
       </select>
-      <div class="cities">
+      <div class="cities" id="los-angeles">
         <div>
           <h2>LA</h2>
-          <h3 class="date">Monday, October 9th, 2023</h3>
+          <h3 class="date" id="current-date">Monday, October 9th, 2023</h3>
         </div>
         <div>
-          <div class="time">11:03 <small>AM</small></div>
+          <div class="time" id="current-time">11:03 <small>AM</small></div>
+        </div>
+      </div>
+      <div class="cities" id="paris">
+        <div>
+          <h2>Paris</h2>
+          <h3 class="date" id="current-date">Monday, October 9th, 2023</h3>
+        </div>
+        <div>
+          <div class="time" id="current-time">11:03 <small>AM</small></div>
         </div>
       </div>
     </div>
